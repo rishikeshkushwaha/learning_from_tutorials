@@ -26,6 +26,6 @@ print soup.find('div', {"class":"ProfileHeaderCard"}).find('p').text
 
 i=1
 print soup.title.text
-for tweets in soup.findAll('div', {"class":"content"}):
+for tweets in soup.findAll('div', {"class":"js-tweet-text-container"}):
     print i,": ",tweets.find('p').text
     i=i+1
